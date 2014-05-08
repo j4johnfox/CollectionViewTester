@@ -22,7 +22,6 @@
 		DB5F5DE7191411B1009A58B4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DB5F5DE5191411B1009A58B4 /* InfoPlist.strings */; };
 		DB5F5DE9191411B1009A58B4 /* CollectionViewTesterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5F5DE8191411B1009A58B4 /* CollectionViewTesterTests.m */; };
 		DB5F5DF31914154A009A58B4 /* FNDummyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB5F5DF21914154A009A58B4 /* FNDummyCollectionViewCell.xib */; };
-		DB5F5DF6191450A2009A58B4 /* FNCenteredCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5F5DF5191450A2009A58B4 /* FNCenteredCollectionViewLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,8 +55,6 @@
 		DB5F5DE6191411B1009A58B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DB5F5DE8191411B1009A58B4 /* CollectionViewTesterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewTesterTests.m; sourceTree = "<group>"; };
 		DB5F5DF21914154A009A58B4 /* FNDummyCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FNDummyCollectionViewCell.xib; sourceTree = "<group>"; };
-		DB5F5DF4191450A2009A58B4 /* FNCenteredCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNCenteredCollectionViewLayout.h; sourceTree = "<group>"; };
-		DB5F5DF5191450A2009A58B4 /* FNCenteredCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNCenteredCollectionViewLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,8 +114,6 @@
 		DB5F5DC3191411B1009A58B4 /* CollectionViewTester */ = {
 			isa = PBXGroup;
 			children = (
-				DB5F5DF4191450A2009A58B4 /* FNCenteredCollectionViewLayout.h */,
-				DB5F5DF5191450A2009A58B4 /* FNCenteredCollectionViewLayout.m */,
 				DB5F5DCC191411B1009A58B4 /* FNAppDelegate.h */,
 				DB5F5DCD191411B1009A58B4 /* FNAppDelegate.m */,
 				DB5F5DCF191411B1009A58B4 /* Main.storyboard */,
@@ -259,7 +254,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB5F5DF6191450A2009A58B4 /* FNCenteredCollectionViewLayout.m in Sources */,
 				DB5F5DCE191411B1009A58B4 /* FNAppDelegate.m in Sources */,
 				DB5F5DCA191411B1009A58B4 /* main.m in Sources */,
 				DB5F5DD4191411B1009A58B4 /* FNViewController.m in Sources */,
@@ -467,6 +461,7 @@
 				DB5F5DEE191411B1009A58B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DB5F5DEF191411B1009A58B4 /* Build configuration list for PBXNativeTarget "CollectionViewTesterTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +470,7 @@
 				DB5F5DF1191411B1009A58B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

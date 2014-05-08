@@ -3,14 +3,9 @@
 //  CollectionViewTester
 //
 //  Created by John Fox on 5/2/14.
-//  Copyright (c) 2014 Findery. All rights reserved.
 //
 
 #import "FNViewController.h"
-
-#import "FNCenteredCollectionViewLayout.h"
-
-#define INNER_MARGIN 10
 
 @interface FNViewController ()
 {
@@ -42,7 +37,7 @@
     // This assumes that the the collectionView is centered withing its parent view.
     myLayout.itemSize = CGSizeMake(collectionView.frame.size.width + margin, collectionView.frame.size.height);
 
-    // A negative margin will move things to
+    // A negative margin will shift each item to the left. 
     myLayout.minimumLineSpacing = -margin;
     
     myLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
@@ -79,13 +74,10 @@
                         layout:(UICollectionViewFlowLayout *)aCollectionViewLayout
         insetForSectionAtIndex:(NSInteger)aSection
 {
-    
     CGFloat margin = (aCollectionViewLayout.minimumLineSpacing / 2);
     
-    NSLog(@"will use this margin %f", margin);
-
     // top, left, bottom, right
-    UIEdgeInsets myInsets = UIEdgeInsetsMake(0,margin,0,margin);
+    UIEdgeInsets myInsets = UIEdgeInsetsMake(0, margin, 0, margin);
     
     return myInsets;
 }
